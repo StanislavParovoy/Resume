@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Stanislav Parovoy, Станислав Паровой, cv, Resume, Product Manager, Project Manager, Управление продуктом, Управление проектом, Aglie, Scrum">
     <meta name="description" content="Сайт - официальное резюме Парового Станислава">
+    <link rel="stylesheet" href="styles.css">
     <title>Resume Stanislav Parovoy</title>
 </head>
 <body>
-
-    <img src="image.jpg" width="200" alt="Image">
+    <div class="conteiner">
+    <div class="info">
+    <img src="image.jpg" alt="Image" class="image">
     
+    <div class="info-text">
     <h1>Станислав Паровой</h1>
 
         <p>Являюсь опытным <strong>менеджером проектов и продуктов</strong>, с подтвержденным опытом работы в сфере <strong>финансовых услуг.</strong></p>
@@ -26,10 +29,14 @@
         <a href="https://vk.com/stanislav.parovoy"target="_blank">Вконтакте</a>
         |
         <a href="https://www.facebook.com/stanislav.parovoy"target="_blank">Facebook</a>
+    </div>
+    </div>
+    
+    <div class="card bg-green">
 
     <h2>Мои хобби</h2>
 
-    <ol>
+    <ol class="list">
         <li>
             <strong>Наука</strong>
             <ul>
@@ -64,16 +71,19 @@
             </ul>
         </li>
     </ol>
+</div>
 
+<div class="card bg-red">
 <h2>Опыт работы</h2>
 
-<table>
-    <thead>
+<table class="table">
+    <!-- <thead>
         <tr>
             <th>Компания</th>
             <th>Долность</th>
             <th>Год</th>
         </tr>
+    </thead> -->
     <tbody>
         <tr>
             <td>UpWork</td>
@@ -91,30 +101,42 @@
             <td>2017-сейчас</td>
         </tr>
     </tbody>
-    </thead>
 </table>
+</div>
 
-<h2>Связаться со мною</h2>
+<div class="card bg-yellow">
+<h2>Мои сертификаты</h2>
+<ul class="link-list">
+    <li><a href="studies.html"> Верстальщик</a></li>
+    <li><a href="studies.html"> Фронтенд разработчик</a></li>
+    <li><a href="studies.html"> Базы данных</a></li>
+</ul>
+</div>
 
-<form action="/">
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Ваше имя">
+<form action="/" class="form">
+    <h2>Связаться со мною</h2>
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Ваше имя">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" placeholder="Введите email">
+        </div>
     </div>
-    
-    <div>
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
 
-    <div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение ..."></textarea>
     </div>
 
-    <button type="submit">Отправить!</button>
+    <button class="btn" type="submit">Отправить!</button>
 </form>
+</div>
 
 </body>
 </html>
